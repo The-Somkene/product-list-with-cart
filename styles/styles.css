@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(20, 50%, 98%);
+  /* height: 100vh; */
+  padding: 40px 120px;
+  font-family: "Red Hat Text";
+  /* display: flex; */
+}
+
+.main {
+  display: flex;
+  gap: 40px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imgcontainer {
+  position: relative;
+}
+
+.product-img {
+  height: 240px;
+  border-radius: 12px;
+}
+
+.product-btn {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid hsl(12, 20%, 44%);
+  position: absolute;
+  z-index: 3;
+  bottom: -16px;
+  right: 36.5px;
+}
+
+.product-btn > img {
+  margin-right: 10px;
+}
+
+.cart {
+  background-color: white;
+  height: 220px;
+  width: 280px;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cart > p {
+  color: hsl(14, 86%, 42%);
+  font-weight: bold;
+}
+.innerCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.innerCart > p {
+  font-size: 12px;
+  color: hsl(12, 20%, 44%);
+}
+
+#empty {
+  height: 100px;
+  width: 100px;
+}
+
+/* color gradients  */
+.grey {
+  color: hsl(7, 20%, 60%);
+}
+.darkGrey {
+  color: hsl(14, 65%, 9%);
+}
+.red {
+  color: hsl(14, 86%, 42%);
+}

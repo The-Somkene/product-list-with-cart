@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking Red Hat Text Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking the vanila css stylesheet -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Product List with Cart</title>
+  </head>
+  <body>
+    <!-- Product list and cart parent section -->
+    <main class="main">
+      <div class="product-list">
+        <h1>Desserts</h1>
+        <!-- Product List -->
+        <div class="items"></div>
+      </div>
+      <!-- Your cart section -->
+      <div class="cart">
+        <p>Your Cart (0)</p>
+        <div class="innerCart">
+          <img
+            id="empty"
+            src="./res/illustration-empty-cart.svg"
+            alt="Empty-cart"
+          />
+          <p>Your added items will appear here</p>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
